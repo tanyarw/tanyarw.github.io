@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+}  
+body {
+  padding-top: 87px; /*50px for the height of the navbar + 37px for the offset*/
+  padding-bottom: 50px; /*50px for the height of the bottom navbar*/
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid .scrollable {
+  height: 100%; /*Sets the scrollable area to 100% of the viewport*/
+}
+.section{
+  height: 100vh;
+  width: 100%;
+  padding-top: 5%;
+}
+.about{
+  padding-top: 0%;
+}
+
+.btn-primary{
+  background-color: #D8FFC6;
+  border: none;
+  color: black;
+  width: 213px;
+  height: 52px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  outline: none;
+}
+
+.redirect a:hover{
+  text-decoration: none;
+}
+.redirect img{
+  margin: 5%;
+  width: 8%;
+}
+.redirect img:hover{
+  margin: 4%;
+  width: 10%;
+}
+.circle1 {
+  width: 309.53px;
+  height: 309.53px;
+  font-size: 16px;
+  text-align: center;
+  background: #E6E6FA;
+  border-radius: 50%;
+  padding: 6% 1% 1% 1%;
+  margin: auto;
+}
+.circle2 {
+  width: 309.53px;
+  height: 309.53px;
+  font-size: 16px;
+  text-align: center;
+  background: #D8FFC6;
+  border-radius: 50%;
+  padding: 6% 1% 1% 1%;
+  margin: auto;
+}
+
+.mnmlogo{
+  width: 30%;
+  margin: auto;
+}
+.csilogo{
+width: 30%;
+margin: auto;
+}
+.skills{
+  margin: 2%;
+  width: 60%
+}
+
+.rect{
+width: 330px;
+height: 165px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin: 1%;
+padding: 5%;
+}
+.intouch{
+  height:97vh;
+}
+.contactimg{
+  width: 88%;
+}
+.outro{
+  font-size: large;
+  margin-top:5%;
+}
+.footer {
+  margin-bottom: 0;
+  width: 100%;
+  background-color: rgb(46, 46, 46);
+  color: white;
+  text-align: center;
+}

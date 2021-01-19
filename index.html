@@ -1,30 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanya Warrier</title>
-    <link rel="stylesheet" href="assets/css/syle.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
-    </style>
-</head>
-<body>
-  <div class="logo">
-    <a href="#"><img id="logo" src="assets/SVG/logo.svg" alt="logo"></a>
-  </div>
-    <nav>  
-        <ul>         
-          <li>
-            <a href="#">About Me</a>
-          </li>
-          <li>
-            <a href="#">My Experiences</a>
-          </li>
-          <li>
-            <a href="#">Contact Me</a>
-          </li>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tanya Warrier</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- My CSS adjustments -->
+      <link rel="stylesheet" href="./assets/css/style.css">
+
+      <!-- Google fonts-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+      <!-- Font Awesome icons-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#about">Tanya Warrier</a>
+        </div>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav> 
-</body>
+      </div>
+    </nav>
+
+    <div class="container-fluid scrollable text-center section about" id="about">
+      <br/>
+      <div class="col-md-5 col-md-offset-1 intro">     
+        <h1>Hi! I’m Tanya</h1><br/>
+        <h4>Third Year Engineering Undergrad</h4>
+        <h4>Bangalore, India</h4>
+
+        <div class="redirect">
+          <a href="https://github.com/tanyarw">
+            <img src="assets\svg\github.svg" alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/tanyawarrier/">
+            <img src="assets\svg\linkedin.svg" alt="LinkedIn" />
+          </a>
+        </div>
+
+        <button type="button" class="btn btn-primary resume">RESUME</button>      
+      </div>
+
+      <div class="col-md-5">
+        <img src="assets\svg\about.svg" alt="about"/>
+      </div>
+    </div>
+
+    <div class="container-fluid scrollable text-center section" id="experience">
+      <h1>EXPERIENCE</h1><br/>
+      <div class="col-md-6">     
+        <img src="assets/svg/Color-Mahindra-logo.jpg" alt="Mahindra" class="mnmlogo"/>
+        <h5>July, 2020 - Sept, 2020</h5> 
+        <br/>
+        <div class="circle1">
+          <h4><strong>Analytics Intern</strong></h4>
+          <p>Worked on -</p>
+          <p>• Disease classification using transfer learning</p>
+          <p>• Crop vs Weed identification using RPN and R-CNN</p>
+          <p>• Leaf image generation using GAN</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/svg/CSIDark.png" alt="Computer Society of India" class="csilogo"/>
+        <h5>July, 2020 - Sept, 2020</h5> 
+        <br/>
+        <div class="circle2">
+          <h4><strong>Chairperson</strong></h4>  
+          <p>Responsibilities -</p>
+          <p>• Disease classification using transfer learning</p>
+          <p>• Crop vs Weed identification using RPN and R-CNN</p>
+          <p>• Leaf image generation using GAN</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid scrollable text-center section" id="skills">
+      <h1>TECHNICAL SKILLS</h1><br/>
+      <img src="assets/svg/skills.svg" alt="Skills" class="skills"/>
+    </div>
+
+    
+    <div class="container-fluid scrollable text-center section" id="projects">
+      <h1>SOME PROJECTS</h1></br>
+      <div class="col-md-8">
+        <div class="col-md-6">
+        <div class="rect">
+          <h4>Tensorflow face detection</h4>
+          <p>blablahbalh</p>
+          <p>blablahbalh</p>
+        </div>  
+        <div class="rect">
+          <h4>Tensorflow face detection</h4>
+          <p>blablahbalh</p>
+          <p>blablahbalh</p>
+        </div>  
+        </div>
+        <div class="col-md-6">
+        <div class="rect">
+          <h4>Tensorflow face detection</h4>
+          <p>blablahbalh</p>
+          <p>blablahbalh</p>
+        </div>
+        <div class="rect">
+          <h4>Tensorflow face detection</h4>
+          <p>blablahbalh</p>
+          <p>blablahbalh</p>
+        </div>   
+      </div>
+      </div>
+      <div class="col-md-4">
+        <img src="assets/svg/skillimg.svg" alt="Projects">  
+      </div>
+    </div>
+
+    
+    <div class="container-fluid scrollable text-center section intouch" id="contact">
+      <h1>GET IN TOUCH!</h1>
+      <div class="col-md-7"> 
+        <img src="assets/svg/contact.svg" alt="Contact me" class="contactimg"/>
+      </div>
+      <div class="col-md-4 outro">
+        <h2>Contact Me!</h2></br>
+        <p>I would love to hear from you!</p>
+        <p>Reach out to me at -</p>
+        <p><a href="mailto:warriertanya@gmail.com">warriertanya@gmail.com</a></p>
+      </div>
+    </div>  
+    <div class="footer">
+      <p>Made with <i class="fa fa-heart pulse"></i>  by Tanya</p>
+    </div>
+  </body>
 </html>
