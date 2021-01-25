@@ -106,6 +106,9 @@ h5{
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.circle1 a{
+  color: black;
+}
 .circle2 {
   width: 25vw;
   height: 25vw;
@@ -120,7 +123,9 @@ h5{
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.circle2 a{
+  color: black;
+}
 .mnmlogo{
   width: 30%;
   margin: auto;
@@ -138,19 +143,34 @@ margin: auto;
   width: 100%;
 }
 .rect{
-width: 25vw;
-height: 19vw;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-margin: 2%;
-padding: 5%;
+  width: 27vw;
+  height: 17vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 2%;
+  padding: 5%;
 }
 .rect:hover{
   cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.rect a{
+  color: black;
+}
+.rect a:hover,a:visited, a:link, a:active{
+  text-decoration: none;
+}
+.lists{
+  text-align: left;
+}
 .intouch{
   margin-top: 5%;
   height:97vh;
+}
+.contact a{
+  text-decoration: none;
+}
+.contact a:hover{
+  text-decoration: none;
 }
 .contactimg{
   width: 10vw;
