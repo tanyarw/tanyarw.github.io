@@ -1,20 +1,19 @@
 <svg width="496" height="464" viewBox="0 0 496 464" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <style type="text/css"><![CDATA[
-
             #butterfly {                      
-                animation: move 15s linear infinite;
-                transform-origin: 73% 27%;
+                animation: move 20s linear infinite;
+                transform-origin: 75% 25%;
             }
             @keyframes move {
                 
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(359deg); }
-            }        
+            }           
 
             #left-wing {
                 transform-origin: 55% 25%;
-	            animation: ani-left-wing 2s ease infinite;
+	            animation: ani-left-wing 1.5s ease infinite;
             }
             @keyframes ani-left-wing {
                 
@@ -24,7 +23,7 @@
             
             #right-wing {
                 transform-origin: 55% 25%;
-	            animation: ani-right-wing 2s ease infinite;
+	            animation: ani-right-wing 1.5s ease infinite;
             }
             @keyframes ani-right-wing {
                 
@@ -33,7 +32,7 @@
             }
 
             #plant-1 {
-                animation: sway1 10s infinite;
+                animation: sway1 6s infinite;
                 transform-origin: 5% 100% 0;
             }
             @keyframes sway1 {
@@ -49,7 +48,7 @@
                 50%{ transform: rotate(-2deg); }
             }
             #plant-3 {
-                animation: sway1 12s infinite;
+                animation: sway1 7s infinite;
                 transform-origin: 5% 100% 0;
             }
             @keyframes sway3 {

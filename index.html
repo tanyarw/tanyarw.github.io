@@ -43,30 +43,40 @@
 
     <div class="container-fluid scrollable text-center section about" id="about">
       <br/>
-      <div class="col-md-5 col-md-offset-1 intro">     
-        <h1>Hi! I’m Tanya</h1><br/>
-        <h4>Third Year Engineering Undergrad</h4>
-        <h4>Bangalore, India</h4>
+      <table>
+        <tr> 
+          <td> 
+            <div class="highlight">
+              <h1>Hi! I’m Tanya</h1>
+            </div>   
+            <br/>
+            <h4>I am an Engineering Undergraduate</h4>
+            <h4>From Vellore Institute of Technology</h4>
+            <h4>I enjoy reading, programming and playing with my dog :)</h4>
 
-        <div class="redirect">
-          <a href="https://github.com/tanyarw">
-            <img src="assets\svg\github.svg" alt="Github" />
-          </a>
-          <a href="https://www.linkedin.com/in/tanyawarrier/">
-            <img src="assets\svg\linkedin.svg" alt="LinkedIn" />
-          </a>
-        </div>
-
-        <button type="button" class="btn btn-primary resume">RESUME</button>      
-      </div>
-
-      <div class="col-md-5">
-        <img src="assets\svg\about.svg" alt="about"/>
-      </div>
+            <div class="redirect">
+              <a class="highlight" href="https://github.com/tanyarw">
+                <img src="assets\svg\github.svg" alt="Github" />
+              </a>
+              <a class="highlight" href="https://www.linkedin.com/in/tanyawarrier/">
+                <img src="assets\svg\linkedin.svg" alt="LinkedIn" />
+              </a>
+            </div>
+            <button type="button" class="btnprimary resume">RESUME</button>  
+          </td>
+          <td>
+            <div class="aboutimg">            
+              <img src="assets\svg\about.svg" alt="about"/>              
+            </div>
+          </td>    
+        </tr>   
+    </table>   
     </div>
 
     <div class="container-fluid scrollable text-center section" id="experience">
-      <h1>EXPERIENCE</h1><br/>
+      <div class="highlight">
+        <h1>EXPERIENCE</h1>
+      </div><br/>
       <div class="col-md-6">     
         <img src="assets/svg/Color-Mahindra-logo.jpg" alt="Mahindra" class="mnmlogo"/>
         <h5>July, 2020 - Sept, 2020</h5> 
@@ -94,59 +104,97 @@
     </div>
 
     <div class="container-fluid scrollable text-center section" id="skills">
-      <h1>TECHNICAL SKILLS</h1><br/>
+      <div class="highlight">
+        <h1>TECHNICAL SKILLS</h1>
+      </div><br/>
       <img src="assets/svg/skills.svg" alt="Skills" class="skills"/>
     </div>
 
     
     <div class="container-fluid scrollable text-center section" id="projects">
-      <h1>SOME PROJECTS</h1></br>
+      <div class="highlight">
+        <h1>MY PROJECTS</h1>
+      </div><br/>
       <div class="col-md-8">
         <div class="col-md-6">
-        <div class="rect">
-          <h4>Tensorflow face detection</h4>
-          <p>blablahbalh</p>
-          <p>blablahbalh</p>
-        </div>  
-        <div class="rect">
-          <h4>Tensorflow face detection</h4>
-          <p>blablahbalh</p>
-          <p>blablahbalh</p>
-        </div>  
+          <div class="rect">
+            <div class="highlight2">
+              <h4><strong>Disease Detector</strong></h4>
+            </div></br>
+            <h5>Detects diseases from pictures of leaves</h5>
+            <h5>Built using VGG16 architecture and Image processing techniques.</h5>
+            <a href="https://github.com/tanyarw/Leaf-Disease-Detection"><h5>See more</h5></a>
+          </div>  
+          <div class="rect">
+            <div class="highlight2">
+              <h4><strong>Face Mask Detector</strong></h4>
+            </div></br>
+            <h5>Real-time detector that identifies faces with or without masks.</h5>
+            <h5>Built using Inception V3 architecture and Cascade classifiers.</h5>
+            <a href="https://github.com/tanyarw/face-mask-detector"><h5>See more</h5></a>
+          </div>  
         </div>
         <div class="col-md-6">
-        <div class="rect">
-          <h4>Tensorflow face detection</h4>
-          <p>blablahbalh</p>
-          <p>blablahbalh</p>
-        </div>
-        <div class="rect">
-          <h4>Tensorflow face detection</h4>
-          <p>blablahbalh</p>
-          <p>blablahbalh</p>
-        </div>   
+          <div class="rect">
+            <div class="highlight2">
+              <h4><strong>Crowdfunding portal</strong></h4>
+            </div></br>
+            <h5>A responsive wildlife centric website, with dashboard, fundraisers, profile and a vivid gallery.</h5>
+            <h5>Built using ReactJS, NodeJS and Mongo Atlas.</h5>
+            <a href="https://github.com/tanyarw/wildlife-ngo-website"><h5>In progress</h5></a>
+          </div> 
+          <div class="rect">
+            <div class="highlight2">
+              <h4><strong>Text Summarizer - Github Issues</strong></h4>
+            </div></br>
+            <h5>Using a dataset of GitHub Issues, a Sequence to Sequence model is constructed to summarize the GitHub issue body</h5>
+            <h5>Constructed with GRUs and Spotify ANNOY package(for recommendations).</h5>
+            <a href="https://github.com/tanyarw/textSummarisationGithubIssues"><h5>See more</h5></a>
+          </div>   
       </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 projects">
         <img src="assets/svg/skillimg.svg" alt="Projects">  
       </div>
     </div>
 
     
     <div class="container-fluid scrollable text-center section intouch" id="contact">
-      <h1>GET IN TOUCH!</h1>
+      <div class="highlight">
+        <h1>GET IN TOUCH!</h1>
+      </div><br/>
       <div class="col-md-7"> 
-        <img src="assets/svg/contact.svg" alt="Contact me" class="contactimg"/>
+        <div>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+          <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+        </div>
+        
       </div>
       <div class="col-md-4 outro">
         <h2>Contact Me!</h2></br>
-        <p>I would love to hear from you!</p>
-        <p>Reach out to me at -</p>
-        <p><a href="mailto:warriertanya@gmail.com">warriertanya@gmail.com</a></p>
+        <h5>I would love to hear from you!</h5>
+        <h5>Reach out to me at -</h5>
+        <div class="highlight2">
+          <h5><a href="mailto:warriertanya@gmail.com">warriertanya@gmail.com</a></h5>
+        </div><br/>        
       </div>
     </div>  
     <div class="footer">
-      <p>Made with <i class="fa fa-heart pulse"></i>  by Tanya</p>
+      <h5>Made with <i class="fa fa-heart pulse"></i>  by Tanya</h5>
     </div>
   </body>
 </html>
