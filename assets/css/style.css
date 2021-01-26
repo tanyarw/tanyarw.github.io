@@ -132,7 +132,7 @@ body {
   .circle1 {
     width: 70vw;
     height: 70vw;
-    font-size: 1.75vh;
+    font-size: 3vw;
     text-align: center;
     background: #E6E6FA;
     border-radius: 50%;
@@ -142,7 +142,7 @@ body {
   .circle2 {
     width: 70vw;
     height: 70vw;
-    font-size: 1.75vh;
+    font-size: 3vw;
     text-align: center;
     background: #D8FFC6;
     border-radius: 50%;
