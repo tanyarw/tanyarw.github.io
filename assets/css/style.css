@@ -1,12 +1,9 @@
 body, html {
-  height: 100%;
+  height: 100vh;
+  scroll-behavior:smooth;
 }  
-body {
-  padding-bottom: 7vw; 
+body { 
   font-family: 'Roboto', sans-serif;
-}
-td{
-  width: 50vw;
 }
 h1 {
   font-size: 3.5vw;
@@ -14,9 +11,34 @@ h1 {
 h2{
   font-size: 2.5vw;
 }
-.highlight {
+h4{
+  font-size: 1.5vw;
+}
+h5{
+  font-size: 1.2vw;
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.5vh;
+  }
+  h2{
+    font-size: 3.5vh;
+  }
+  h4{
+    font-size: 2.5vh;
+  }
+  h5{
+    font-size: 2.2vh;
+  }
+}
+.navbar-dark{
+  background-color: black;
+}
+.fa-bars{
+  color: white;
+}
+.highlight {  
   margin: auto;
-  height: fit-content;
   width: fit-content;
   background: linear-gradient(to right, #E6E6FA, #E6E6FA);
   background-repeat: no-repeat;
@@ -27,16 +49,8 @@ h2{
   cursor: pointer;
   background-size: 100% 100%;
 }
-
-h4{
-  font-size: 1.5vw;
-}
-h5{
-  font-size: 1.2vw;
-}
 .highlight2 {
   margin: auto;
-  height: fit-content;
   width: fit-content;
   background: linear-gradient(to right, #D8FFC6, #D8FFC6);
   background-repeat: no-repeat;
@@ -47,60 +61,109 @@ h5{
   cursor: pointer;
   background-size: 100% 100%;
 }
-
 .section{
-  height: 100vh;
-  width: 98vw;
-  padding-top: 5vw;
+  padding-top: 9vh;
+  min-height: 100vh;
 }
-
-.about{
-  padding-top: 8vh;
+@media only screen and (max-width: 768px){
+  .aboutimg{
+    width: 70vw;
+    height: 70vw;
+  }
+  .btnprimary{
+    background-color: #D8FFC6;
+    border: none;
+    color: black;
+    width: 18vh;
+    height: 5vh;
+    border-radius: 1vh;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5vh;
+    line-height: 1vh;
+    outline: none;
+  }
+  .redirect img{
+    margin: 1.75vh;
+    width: 3vh;
+  }
 }
-
-.aboutimg img{
-  width: 38vw;
-  height: 38vw;
-}
-
-.btnprimary{
-  background-color: #D8FFC6;
-  border: none;
-  color: black;
-  width: 18vw;
-  height: 5vw;
-  border-radius: 1vw;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.5vw;
-  line-height: 1vw;
-  outline: none;
+@media only screen and (min-width: 992px) {
+  .aboutimg{
+    width: 60vh;
+    height: 60vh;
+  }
+  .btnprimary{
+    background-color: #D8FFC6;
+    border: none;
+    color: black;
+    width: 18vw;
+    height: 5vw;
+    border-radius: 1vw;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5vw;
+    line-height: 1vw;
+    outline: none;
+  }
+  .redirect img{
+    margin: 1.75vw;
+    width: 3vw;
+  }
 }
 .btnprimary:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .redirect a:hover{
   text-decoration: none;
-}
-.redirect img{
-  margin: 1.75vw;
-  width: 3vw;
 }
 .redirect img:hover{
   margin: 1.5vw;
   width: 3.5vw;
 }
-
-.circle1 {
-  width: 25vw;
-  height: 25vw;
-  font-size: 1.25vw;
-  text-align: center;
-  background: #E6E6FA;
-  border-radius: 50%;
-  padding: 6% 1% 1% 1%;
-  margin: auto;
+@media only screen and (max-width: 768px) {
+  .circle1 {
+    width: 70vw;
+    height: 70vw;
+    font-size: 1.75vh;
+    text-align: center;
+    background: #E6E6FA;
+    border-radius: 50%;
+    padding: 6% 1% 1% 1%;
+    margin: auto;
+  }
+  .circle2 {
+    width: 70vw;
+    height: 70vw;
+    font-size: 1.75vh;
+    text-align: center;
+    background: #D8FFC6;
+    border-radius: 50%;
+    padding: 6% 1% 1% 1%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .circle1 {
+    width: 25vw;
+    height: 25vw;
+    font-size: 1.25vw;
+    text-align: center;
+    background: #E6E6FA;
+    border-radius: 50%;
+    padding: 6% 1% 1% 1%;
+    margin: auto;
+  }
+  .circle2 {
+    width: 25vw;
+    height: 25vw;
+    font-size: 1.25vw;
+    text-align: center;
+    background: #D8FFC6;
+    border-radius: 50%;
+    padding: 6% 1% 1% 1%;
+    margin: auto;
+  }
 }
 .circle1:hover{
   cursor: pointer;
@@ -108,16 +171,6 @@ h5{
 }
 .circle1 a{
   color: black;
-}
-.circle2 {
-  width: 25vw;
-  height: 25vw;
-  font-size: 1.25vw;
-  text-align: center;
-  background: #D8FFC6;
-  border-radius: 50%;
-  padding: 6% 1% 1% 1%;
-  margin: auto;
 }
 .circle2:hover{
   cursor: pointer;
@@ -138,16 +191,33 @@ margin: auto;
   margin: 2%;
   width: 60%;
 }
-
-.projects img{
-  width: 100%;
+@media only screen and (max-width: 768px){
+  .projectsimg{
+    width: 70vw;
+  }
+  .rect{
+    width: 87vw;
+    height: 40vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2%;
+    padding: 5%;
+  }
 }
-.rect{
-  width: 27vw;
-  height: 17vw;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 2%;
-  padding: 5%;
+@media only screen and (min-width: 992px) {
+  .projectsimg{
+    width: 30vw;
+  }
+  .rect{
+    width: 28vw;
+    height: 17vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 2%;
+    padding: 5%;
+  }
+}
+
+h4:hover{
+  text-decoration: underline;
 }
 .rect:hover{
   cursor: pointer;
@@ -162,19 +232,23 @@ margin: auto;
 .lists{
   text-align: left;
 }
-.intouch{
-  margin-top: 5%;
-  height:97vh;
-}
 .contact a{
   text-decoration: none;
 }
 .contact a:hover{
   text-decoration: none;
 }
-.contactimg{
-  width: 10vw;
-  margin: 1%;
+@media only screen and (max-width: 768px){
+  .contactimg{
+    width: 20vw;
+    margin: 1%;
+  }
+}
+@media only screen and (min-width: 992px){
+  .contactimg{
+    width: 10vw;
+    margin: 1%;
+  }
 }
 .contactimg:hover{
   width: 11vw;
@@ -182,11 +256,9 @@ margin: auto;
   margin: 0.05%;
 }
 .outro{
-  font-size: large;
   margin-top:5%;
 }
 .footer {
-  margin-bottom: 0;
   width: 100%;
   background-color: rgb(46, 46, 46);
   color: white;

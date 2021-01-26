@@ -5,13 +5,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Tanya Warrier</title>
       <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>      
 
       <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
       <!-- My CSS adjustments -->
       <link rel="stylesheet" href="./assets/css/style.css">
@@ -22,198 +23,217 @@
 
       <!-- Font Awesome icons-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  </head>
+    </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar">
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#about">Tanya Warrier</a>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">        
+        <a class="navbar-brand" href="#about">Tanya Warrier</a>
+
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation" >
+          <i class="fa fa-bars"></i>
+        </button>
         
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>      
     </nav>
 
-    <div class="container-fluid scrollable text-center section about" id="about">
+    <div class="container-fluid scrollable text-center section" id="about">
       <br/>
-      <table>
-        <tr> 
-          <td> 
-            <div class="highlight">
-              <h1>Hi! I’m Tanya</h1>
-            </div>   
-            <br/>
-            <h4>I am an Engineering Undergraduate</h4>
-            <h4>From Vellore Institute of Technology</h4>
-            <h4>I enjoy reading, programming and playing with my dog :)</h4>
+      <div class="row">
+        <div class="col-md-6 col-lg-6 aboutclass">
+          <h1 class="highlight">Hi! I’m Tanya</h1>  
+          <br/>
+          <h4>I am an Engineering Undergraduate</h4>
+          <h4>From Vellore Institute of Technology</h4>
+          <h4>I enjoy reading, programming and playing with my dog :)</h4>
+  
+          <div class="redirect">
+            <a class="highlight" href="https://github.com/tanyarw">
+              <img src="assets\svg\github.svg" alt="Github" />
+            </a>
+            <a class="highlight" href="https://www.linkedin.com/in/tanyawarrier/">
+              <img src="assets\svg\linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+          <a href="https://drive.google.com/file/d/13ZcY4-89Wjk-fvTtYXZsiGzgv_rP4ecU/view?usp=sharing" target="_blank"><button type="button" class="btnprimary resume">RESUME</button></a>  
+          <br/><br/>
+        </div>
+        <div class="col-md-6 col-lg-6">                     
+          <img class="aboutimg" src="assets\svg\about.svg" alt="about"/>            
+        </div> 
 
-            <div class="redirect">
-              <a class="highlight" href="https://github.com/tanyarw">
-                <img src="assets\svg\github.svg" alt="Github" />
-              </a>
-              <a class="highlight" href="https://www.linkedin.com/in/tanyawarrier/">
-                <img src="assets\svg\linkedin.svg" alt="LinkedIn" />
-              </a>
-            </div>
-            <a href="https://drive.google.com/file/d/13ZcY4-89Wjk-fvTtYXZsiGzgv_rP4ecU/view?usp=sharing" target="_blank"><button type="button" class="btnprimary resume">RESUME</button></a>  
-          </td>
-          <td>
-            <div class="aboutimg">            
-              <img src="assets\svg\about.svg" alt="about"/>              
-            </div>
-          </td>    
-        </tr>   
-    </table>   
+      </div>      
     </div>
+  <hr>
 
     <div class="container-fluid scrollable text-center section" id="experience">
       <div class="highlight">
         <h1>EXPERIENCE</h1>
       </div><br/>
-      <div class="col-md-6">     
-        <img src="assets/svg/Color-Mahindra-logo.jpg" alt="Mahindra" class="mnmlogo"/>
-        <h5>July, 2020 - Sept, 2020</h5> 
-        <br/>
-        <div class="circle1">
-          <a href="https://drive.google.com/file/d/1PzsId1eGb70GKZoRE0wz0GmYJqKIw6Zy/view?usp=sharing" target="_blank">
-          <h4><strong>Analytics Intern</strong></h4>
-          <p>Worked on -</p>
-          <p>• Disease classification using transfer learning</p>
-          <p>• Crop vs Weed identification using RPN and R-CNN</p>
-          <p>• Leaf image generation using GAN</p>
-          </a>
+      <div class="row">
+        <div class="col-md-6">     
+          <img src="assets/svg/Color-Mahindra-logo.jpg" alt="Mahindra" class="mnmlogo"/>
+          <h5>July, 2020 - Sept, 2020</h5> 
+          <br/>
+          <div class="circle1">
+            <br/>
+            <a href="https://drive.google.com/file/d/1PzsId1eGb70GKZoRE0wz0GmYJqKIw6Zy/view?usp=sharing" target="_blank">
+            <h4><strong>Analytics Intern</strong></h4>
+            <p>Worked on -</p>
+            <p>• Disease classification using transfer learning</p>
+            <p>• Crop vs Weed identification using RPN and R-CNN</p>
+            <p>• Leaf image generation using GAN</p>
+            </a>
+          </div>
+          <br/>
         </div>
-      </div>
-      <div class="col-md-6">
-        <img src="assets/svg/CSIDark.png" alt="Computer Society of India" class="csilogo"/>
-        <h5>July, 2020 - Sept, 2020</h5> 
-        <br/>
-        <div class="circle2">
-          <a href="https://drive.google.com/file/d/17hCBn45eNkb6b7hvfBegrI9M4OBIbTNl/view?usp=sharing" target="_blank">
-          <h4><strong>Chairperson</strong></h4>  
-          <p>Responsibilities -</p>
-          <p>• Ensured effective management in the organisation </p>
-          <p>• Promoted effective working & constructive environment</p>
-          <p>• Supervised every team & supported its members</p>   
-          </a>       
+        <div class="col-md-6">
+          <img src="assets/svg/CSIDark.png" alt="Computer Society of India" class="csilogo"/>
+          <h5>July, 2020 - Sept, 2020</h5> 
+          <br/>
+          <div class="circle2">
+            <br/>
+            <a href="https://drive.google.com/file/d/17hCBn45eNkb6b7hvfBegrI9M4OBIbTNl/view?usp=sharing" target="_blank">
+            <h4><strong>Chairperson</strong></h4>  
+            <p>Responsibilities -</p>
+            <p>• Ensured effective management in the organisation </p>
+            <p>• Supervised every team & supported its members</p>  
+            <p>• Promoted effective working & constructive environment</p>             
+            </a>       
+          </div>
+          <br/>
         </div>
+        </br>
       </div>
     </div>
+  <hr>
 
-    <div class="container-fluid scrollable text-center section" id="skills">
-      <div class="highlight">
-        <h1>TECHNICAL SKILLS</h1>
-      </div><br/>
+    <div class="container-fluid scrollable text-center section" id="skills">      
+      <h1 class="highlight">TECHNICAL SKILLS</h1>
+      <br/>
       <img src="assets/svg/skills.svg" alt="Skills" class="skills"/>
     </div>
-
+  <hr>
     
     <div class="container-fluid scrollable text-center section" id="projects">
-      <div class="highlight">
-        <h1>MY PROJECTS</h1>
-      </div><br/>
-      <div class="col-md-8">
-        <div class="col-md-6">
-          <div class="rect">
-            <a href="https://github.com/tanyarw/Leaf-Disease-Detection" target="_blank">
-            <div class="highlight2">
-              <h4><strong>Disease Detector</strong></h4>
-            </div></br>
-            <div class="lists highlight2">
-              <li>Detects diseases from pictures of leaves</li>
-              <li>VGG16 architecture</li> 
-              <li>Image processing techniques.</li>
+      <h1 class="highlight">MY PROJECTS</h1>
+      <br/>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="rect">
+                <a href="https://github.com/tanyarw/Leaf-Disease-Detection" target="_blank">
+                <div class="highlight2">
+                  <h4><strong>Disease Detector</strong></h4>
+                </div></br>
+                <div class="lists highlight2">
+                  <li>Detects diseases from pictures of leaves</li>
+                  <li>VGG16 architecture</li> 
+                  <li>Image processing techniques.</li>
+                </div>
+                </a>
+              </div>  
+              <div class="rect">
+                <a href="https://github.com/tanyarw/face-mask-detector" target="_blank">
+                  <div class="highlight2">
+                    <h4><strong>Face Mask Detector</strong></h4>
+                  </div></br>
+                  <div class="lists highlight2">           
+                    <li>Detects faces with or without masks real-time.</li>
+                    <li>Inception V3 architecture</li>
+                    <li>Cascade classifiers.</li>
+                  </div>
+                </a>
+              </div>  
             </div>
-            </a>
-          </div>  
-          <div class="rect">
-            <a href="https://github.com/tanyarw/face-mask-detector" target="_blank">
-              <div class="highlight2">
-                <h4><strong>Face Mask Detector</strong></h4>
-              </div></br>
-              <div class="lists highlight2">           
-                <li>Detects faces with or without masks real-time.</li>
-                <li>Inception V3 architecture</li>
-                <li>Cascade classifiers.</li>
-              </div>
-            </a>
-          </div>  
-        </div>
-        <div class="col-md-6">
-          <div class="rect">
-            <a href="https://github.com/tanyarw/wildlife-ngo-website" target="_blank">
-              <div class="highlight2">
-                <h4><strong>Crowdfunding portal</strong></h4>
-              </div></br>
-              <div class="lists highlight2">
-                <li>Responsive wildlife centric website</li>
-                <li>Dashboard, fundraisers, profile and gallery.</li>
-                <li>ReactJS, NodeJS and Mongo Atlas.</li>
+            <div class="col-md-6">
+              <div class="rect">
+                <a href="https://github.com/tanyarw/wildlife-ngo-website" target="_blank">
+                  <div class="highlight2">
+                    <h4><strong>Crowdfunding portal</strong></h4>
+                  </div></br>
+                  <div class="lists highlight2">
+                    <li>Responsive wildlife centric website</li>
+                    <li>Dashboard, fundraisers, profile and gallery.</li>
+                    <li>ReactJS, NodeJS and Mongo Atlas.</li>
+                  </div> 
+                </a>
               </div> 
-            </a>
-          </div> 
-          <div class="rect">
-            <a href="https://github.com/tanyarw/textSummarisationGithubIssues" target="_blank">
-              <div class="highlight2">
-                <h4><strong>Text Summarizer - Github Issues</strong></h4>
-              </div></br>
-              <div class="lists highlight2">
-                <li>Summarize the GitHub issue body</li>
-                <li>Sequence to Sequence model (GRUs)</li>
-                <li>Spotify ANNOY package(recommender).</li>
-              </div>
-            </a>
-          </div>   
-      </div>
-      </div>
-      <div class="col-md-4 projects">
-        <img src="assets/svg/skillimg.svg" alt="Projects">  
+              <div class="rect">
+                <a href="https://github.com/tanyarw/textSummarisationGithubIssues" target="_blank">
+                  <div class="highlight2">
+                    <h4><strong>Text Summarizer - Github Issues</strong></h4>
+                  </div></br>
+                  <div class="lists highlight2">
+                    <li>Summarize the GitHub issue body</li>
+                    <li>Sequence to Sequence model (GRUs)</li>
+                    <li>Spotify ANNOY package(recommender).</li>
+                  </div>
+                </a>
+              </div>   
+            </div>
+          </div>
+          <br/>
+        </div>        
+        <div class="col-md-4">
+          <img class="projectsimg" src="assets/svg/skillimg.svg" alt="Projects">  
+        </div>
       </div>
     </div>
-
+    <hr>
     
-    <div class="container-fluid scrollable text-center section intouch" id="contact">
-      <div class="highlight">
-        <h1>GET IN TOUCH!</h1>
-      </div><br/>
-      <div class="col-md-7"> 
-        <div class="contact">
-          <a href="mailto:warriertanya@gmail.com">          
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
-            <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
-          </a>
+    <div class="container-fluid scrollable text-center section" id="contact">
+      <h1 class="highlight">GET IN TOUCH!</h1>
+      <br/>
+      <div class="row">
+        <div class="col-md-7 col-lg-7"> 
+          <div class="contact">
+            <a href="mailto:warriertanya@gmail.com">          
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact2.svg" alt="Contact me"/>
+              <img class="contactimg" src="assets/svg/contact1.svg" alt="Contact me"/>
+            </a>
+          </div>
+          <br/>
         </div>
-      </div>
-      <div class="col-md-4 outro">
-        <h2>Contact Me!</h2></br>
-        <h5>I would love to hear from you!</h5>
-        <h5>Reach out to me at -</h5>
-        <div class="highlight2">
-          <h5><a href="mailto:warriertanya@gmail.com">warriertanya@gmail.com</a></h5>
-        </div><br/>        
-      </div>
-    </div>  
+        <div class="col-md-4 outro">
+          <h2>Contact Me!</h2></br>
+          <h5>I would love to hear from you!</h5>
+          <h5>Reach out to me at -</h5>
+          <div class="highlight2">
+            <h5><a href="mailto:warriertanya@gmail.com">warriertanya@gmail.com</a></h5>
+          </div><br/>        
+        </div>
+      </div> 
+    </div> 
     <div class="footer">
       <h5>Made with <i class="fa fa-heart pulse"></i>  by Tanya</h5>
     </div>
