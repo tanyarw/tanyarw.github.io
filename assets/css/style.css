@@ -50,7 +50,6 @@ body {
   transition: background-size 1s 0s;
 }
 .highlight:hover {
-  cursor: pointer;
   background-size: 100% 100%;
 }
 .highlight2 {
@@ -194,11 +193,12 @@ body {
 width: 30%;
 margin: auto;
 }
-.skills{
-  margin: 2%;
-  width: 60%;
-}
+
 @media only screen and (max-width: 768px){
+  .skills{
+    margin: 5%;
+    width: 15vw;
+  }
   .projectsimg{
     width: 70vw;
   }
@@ -211,6 +211,10 @@ margin: auto;
   }
 }
 @media only screen and (min-width: 992px) {
+  .skills{
+    margin: 2%;
+    width: 7vw;
+  }
   .projectsimg{
     width: 30vw;
   }
@@ -221,6 +225,9 @@ margin: auto;
     margin: 2%;
     padding: 5%;
   }
+}
+.skills:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
 h4:hover{
