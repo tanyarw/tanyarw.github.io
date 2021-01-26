@@ -5,18 +5,7 @@ body, html {
 body { 
   font-family: 'Roboto', sans-serif;
 }
-h1 {
-  font-size: 3.5vw;
-}
-h2{
-  font-size: 2.5vw;
-}
-h4{
-  font-size: 1.5vw;
-}
-h5{
-  font-size: 1.2vw;
-}
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 4.5vh;
@@ -31,6 +20,21 @@ h5{
     font-size: 2.2vh;
   }
 }
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.5vw;
+  }
+  h2{
+    font-size: 2.5vw;
+  }
+  h4{
+    font-size: 1.5vw;
+  }
+  h5{
+    font-size: 1.2vw;
+  }
+}
+
 .navbar-dark{
   background-color: black;
 }
@@ -62,7 +66,7 @@ h5{
   background-size: 100% 100%;
 }
 .section{
-  padding-top: 9vh;
+  padding-top: 12vh;
   min-height: 100vh;
 }
 @media only screen and (max-width: 768px){
@@ -89,9 +93,12 @@ h5{
   }
 }
 @media only screen and (min-width: 992px) {
+  .aboutclass{
+    margin-top: 5%;
+  }
   .aboutimg{
-    width: 60vh;
-    height: 60vh;
+    width: 40vw;
+    height: 40vw;
   }
   .btnprimary{
     background-color: #D8FFC6;
@@ -145,9 +152,9 @@ h5{
 }
 @media only screen and (min-width: 992px) {
   .circle1 {
-    width: 25vw;
-    height: 25vw;
-    font-size: 1.25vw;
+    width: 26vw;
+    height: 26vw;
+    font-size: 1.1vw;
     text-align: center;
     background: #E6E6FA;
     border-radius: 50%;
@@ -155,9 +162,9 @@ h5{
     margin: auto;
   }
   .circle2 {
-    width: 25vw;
-    height: 25vw;
-    font-size: 1.25vw;
+    width: 26vw;
+    height: 26vw;
+    font-size: 1.1vw;
     text-align: center;
     background: #D8FFC6;
     border-radius: 50%;
