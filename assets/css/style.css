@@ -13,6 +13,9 @@ body {
   h2{
     font-size: 3.5vh;
   }
+  h3{
+    font-size: 3vh;
+  }
   h4{
     font-size: 2.5vh;
   }
@@ -25,7 +28,10 @@ body {
     font-size: 3.5vw;
   }
   h2{
-    font-size: 2.5vw;
+    font-size: 3vw;
+  }
+  h3{
+    font-size: 1.75vw;
   }
   h4{
     font-size: 1.5vw;
@@ -172,29 +178,16 @@ body {
   }
 }
 .circle1:hover{
-  cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.circle1 a{
-  color: black;
 }
 .circle2:hover{
-  cursor: pointer;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.circle2 a{
-  color: black;
-}
-.mnmlogo{
-  width: 30%;
-  margin: auto;
-}
-.csilogo{
-width: 30%;
-margin: auto;
-}
-
 @media only screen and (max-width: 768px){
+  .logo1{
+    height: 3.5vh;
+    margin: auto;
+  }
   .skills{
     margin: 5%;
     width: 15vw;
@@ -211,6 +204,10 @@ margin: auto;
   }
 }
 @media only screen and (min-width: 992px) {
+  .logo1{
+    height: 3.5vw;
+    margin: auto;
+  }
   .skills{
     margin: 2%;
     width: 7vw;
@@ -229,9 +226,12 @@ margin: auto;
 .skills:hover{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
-
-h4:hover{
+.experiencehead{
+  color: black;
+}
+.experiencehead:hover{
   text-decoration: underline;
+  color: black;
 }
 .rect:hover{
   cursor: pointer;
